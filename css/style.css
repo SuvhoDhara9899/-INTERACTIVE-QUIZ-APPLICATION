@@ -1,0 +1,501 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================
+   HOME / LOGIN PAGE
+========================= */
+
+.container {
+    width: 400px;
+    padding: 40px;
+
+    background: white;
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.container h1 {
+    margin-bottom: 15px;
+}
+
+.container p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+select {
+    cursor: pointer;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   QUIZ PAGE
+========================= */
+
+.quiz-container {
+    width: 600px;
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.quiz-header div {
+    font-weight: bold;
+}
+
+
+/* Timer */
+
+#timer {
+    display: inline-block;
+
+    min-width: 35px;
+
+    padding: 8px;
+
+    text-align: center;
+
+    background: #2563eb;
+    color: white;
+
+    border-radius: 6px;
+}
+
+
+/* Progress */
+
+#progress {
+    margin-bottom: 15px;
+
+    color: #2563eb;
+
+    font-weight: bold;
+}
+
+
+/* Question Number */
+
+#question-number {
+    margin-bottom: 15px;
+
+    color: #666;
+}
+
+
+/* Question */
+
+#question {
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   ANSWER OPTIONS
+========================= */
+
+#options {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.option {
+    width: 100%;
+
+    padding: 15px;
+
+    background: #f5f5f5;
+    color: #222;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #e5e7eb;
+}
+
+.option.selected {
+    background: #2563eb;
+
+    color: white;
+
+    border-color: #2563eb;
+}
+
+
+/* =========================
+   QUIZ BUTTONS
+========================= */
+
+.quiz-buttons {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.quiz-buttons button {
+    flex: 1;
+}
+
+
+/* Previous */
+
+#previous-btn {
+    background: #6b7280;
+}
+
+#previous-btn:hover {
+    background: #4b5563;
+}
+
+
+/* Save */
+
+#save-btn {
+    background: #16a34a;
+}
+
+#save-btn:hover {
+    background: #15803d;
+}
+
+
+/* Disabled Button */
+
+.quiz-buttons button:disabled {
+    opacity: 0.5;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   RESULT PAGE
+========================= */
+
+.result-container {
+    width: 450px;
+
+    padding: 40px;
+
+    background: white;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.result-container h1 {
+    margin-bottom: 15px;
+}
+
+.result-container h2 {
+    margin-bottom: 20px;
+}
+
+
+/* Score Box */
+
+.score-box {
+    margin: 25px 0;
+
+    padding: 20px;
+
+    background: #f3f4f6;
+
+    border-radius: 10px;
+}
+
+.score-box p {
+    margin: 10px 0;
+
+    color: #333;
+}
+
+
+/* Result Buttons */
+
+.result-buttons {
+    margin-top: 25px;
+}
+
+.result-buttons button {
+    margin-top: 10px;
+}
+
+
+/* =========================
+   CERTIFICATE PAGE
+========================= */
+
+.certificate-page {
+    width: 900px;
+
+    margin: 40px auto;
+}
+
+
+/* Certificate */
+
+.certificate {
+    padding: 60px;
+
+    background: white;
+
+    text-align: center;
+
+    border: 10px double #2563eb;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.certificate h1 {
+    font-size: 40px;
+
+    color: #2563eb;
+
+    margin-bottom: 30px;
+}
+
+.certificate h2 {
+    font-size: 35px;
+
+    margin: 20px 0;
+
+    color: #111827;
+}
+
+.certificate h3 {
+    font-size: 25px;
+
+    margin: 15px 0;
+
+    color: #2563eb;
+
+    text-transform: capitalize;
+}
+
+.certificate p {
+    font-size: 18px;
+
+    margin: 12px 0;
+}
+
+
+/* Certificate Grade */
+
+.certificate-grade {
+    font-size: 22px !important;
+}
+
+
+/* Certificate Bottom */
+
+.certificate-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 60px;
+}
+
+.certificate-bottom div {
+    width: 200px;
+}
+
+.certificate-bottom hr {
+    border: none;
+
+    border-top: 1px solid #333;
+}
+
+
+/* Certificate Buttons */
+
+.certificate-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.certificate-buttons button {
+    flex: 1;
+}
+
+
+/* =========================
+   PRINT CERTIFICATE
+========================= */
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .certificate-page {
+        width: 100%;
+
+        margin: 0;
+    }
+
+    .certificate {
+        width: 100%;
+
+        min-height: 650px;
+
+        margin: 0;
+
+        padding: 80px 40px;
+
+        box-shadow: none;
+    }
+
+    .certificate-buttons {
+        display: none;
+    }
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .quiz-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .result-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .certificate-page {
+        width: 95%;
+
+        margin: 20px auto;
+    }
+
+    .certificate {
+        padding: 35px 20px;
+    }
+
+    .certificate h1 {
+        font-size: 28px;
+    }
+
+    .certificate h2 {
+        font-size: 25px;
+    }
+
+    .certificate h3 {
+        font-size: 20px;
+    }
+
+    .certificate-bottom {
+        gap: 20px;
+    }
+
+    .certificate-bottom div {
+        width: 45%;
+    }
+
+    .certificate-buttons {
+        flex-direction: column;
+    }
+
+}

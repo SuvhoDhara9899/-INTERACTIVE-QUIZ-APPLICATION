@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Result</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="result-container">
+
+        <h1>Quiz Completed!</h1>
+
+        <h2 id="result-name"></h2>
+
+        <div class="score-box">
+
+            <h2 id="score"></h2>
+
+            <p id="correct"></p>
+
+            <p id="wrong"></p>
+
+            <p id="percentage"></p>
+
+            <p id="grade"></p>
+
+        </div>
+
+        <div class="result-buttons">
+
+            <button onclick="viewCertificate()">
+                View Certificate
+            </button>
+
+            <button onclick="restartQuiz()">
+                Restart Quiz
+            </button>
+
+            <button onclick="goHome()">
+                Back to Home
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="js/result.js"></script>
+
+</body>
+
+</html>

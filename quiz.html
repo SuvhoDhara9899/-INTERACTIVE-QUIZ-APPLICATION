@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <div class="quiz-header">
+            <h2 id="welcome"></h2>
+
+            <div>
+                Time:
+                <span id="timer">30</span>
+            </div>
+        </div>
+
+        <div id="progress"></div>
+
+        <p id="question-number"></p>
+
+        <h2 id="question">Loading question...</h2>
+
+        <div id="options"></div>
+
+        <div class="quiz-buttons">
+
+            <button id="previous-btn" onclick="previousQuestion()">
+                Previous
+            </button>
+
+            <button id="save-btn" onclick="saveAnswer()">
+                Save
+            </button>
+
+            <button id="next-btn" onclick="nextQuestion()">
+                Next
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="js/quiz.js"></script>
+
+</body>
+
+</html>
